@@ -1,0 +1,61 @@
+.container-weather{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 100px;
+}
+.container-weather .contain {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.container-weather .contain .first-box {
+  font-size: 250px;
+}
+.container-weather .contain .first-box i {
+  margin-right: 50px;
+}
+.container-weather .contain .second-box {
+  font-size: 40px;
+  font-weight: 400;
+}
+.container-weather .contain .second-box strong {
+  font-weight: 600;
+}
+.container-weather .contain .third-box strong {
+  font-size: 22px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .container-weather .contain {
+    left: 5%;
+  }
+  .container-weather .contain .first-box {
+    font-size: 150px;
+  }
+  .container-weather .contain .second-box {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .container-weather{
+    left: 50px;
+  }
+  .container-weather .contain .first-box {
+    font-size: 70px;
+  }
+  .container-weather .contain .first-box span {
+    right: 35px;
+    position: relative;
+  }
+  .container-weather .contain .second-box {
+    font-size: 13px;
+  }
+  .container-weather .contain .third-box {
+    font-size: 11px;
+  }
+}

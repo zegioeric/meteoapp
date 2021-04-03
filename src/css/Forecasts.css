@@ -1,0 +1,189 @@
+.container-forecasts{  
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  background-color: #e4e4e4;
+  color: #898989;
+  position: absolute;
+  right: calc(100% - 100px);
+  transition: right 1.2s ease-in-out;
+}
+
+.open{ 
+  right: 100px;
+}
+
+.container-forecasts .side{  
+  width: 100px;
+  height: 100vh;
+  position: relative;
+  float: right;
+}
+
+.container-forecasts .contain{
+  overflow-y: scroll;
+  position: absolute;
+  height: 100vh;
+  width: calc(100% - 100px);
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+  padding-left: calc(100px + 5%);
+  padding-top: 5%;
+}
+
+.container-forecasts .contain h2{
+  margin-bottom: 150px;
+}
+
+.container-forecasts .contain::-webkit-scrollbar {
+  display: none;
+}
+
+.container-forecasts .contain .box{
+  position: relative;
+  display: inline-block;
+  width: 330px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
+
+.container-forecasts .contain .box .contain-icon{
+  display: inline-block;
+  font-size: 50px;
+  width: 50px;
+}
+
+.container-forecasts .contain .box .contain-icon i{
+  position: relative;
+  bottom: 20px;
+}
+
+.container-forecasts .contain .box .contain-text{
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  margin-left: 30px;
+  font-weight: 400;
+}
+
+.container-forecasts .contain .box .contain-text p{
+  margin-bottom: 0px;
+}
+
+/* Sidebar */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; 
+  position: relative;
+  top: calc(50% - 25px);
+  left: 30px;
+  transform: translateY(-50%);
+  transform:rotate(-90deg);
+}
+
+.hamburger:hover {
+  opacity: 0.7; 
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; 
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; 
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  -moz-box-shadow:    inset 0 2px 0px #c4c4c4;
+  -webkit-box-shadow: inset 0 2px 0px #c4c4c4;
+  box-shadow:         inset 0 2px 0px #c4c4c4;
+  width: 45px;
+  height: 7px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; 
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block; 
+}
+
+.hamburger-inner::before {
+  top: -10px; 
+}
+
+.hamburger-inner::after {
+  bottom: -10px; 
+}
+
+
+@media screen and (max-width: 1100px) {
+  .is-animated {
+    top: 12px;
+  }
+  .container-forecasts .contain .box {
+    margin-right: 0;
+    width: 290px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .container-forecasts .side {
+    width: 50px;
+  }
+  .container-forecasts {
+    right: calc(100% - 50px);
+  }
+  .hamburger{
+    left: 7px
+  }
+  .open{ 
+    right: 50px;
+  }
+  .container-forecasts .contain {
+    width: calc(100% - 50px);
+    padding-left: calc(50px + 5%);
+    padding-top: 15%;
+  }
+  .container-forecasts .contain h2 {
+    margin-bottom: 70px;
+  }
+  .container-forecasts .contain .box {
+    margin-right: 0;
+    width: 290px;
+    margin-bottom: 35px;
+  }
+  .container-forecasts .contain .box {
+    width: 230px;
+  }
+  .container-forecasts .contain .box .contain-text {
+    font-size: 18px;
+  }
+  .container-forecasts .contain .box .contain-icon {
+    font-size: 40px;
+    width: 30px;
+  }
+  .is-animated {
+    top: 5px !important;
+  }
+}

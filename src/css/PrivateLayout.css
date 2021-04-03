@@ -1,0 +1,39 @@
+.private-layout {
+  background-color: #fefefe;
+  color: #777;
+  height: 100vh;
+}
+.navbar-expand-lg{
+  position: relative;
+  z-index: 12;
+  background-color: #fefefe;
+  padding: 40px;
+  padding-left: 10%; 
+  padding-right: 10%; 
+  font-size: 20px;
+}
+.navbar-nav a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+.btn-action{
+  font-size: 25px;
+  margin: 15px;
+  cursor: pointer;
+  text-decoration: none !important; 
+}
+.capitalize{
+  text-transform: capitalize
+}
+
+.cities-map span{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cities-map span:hover{
+  color: #111 !important;
+}

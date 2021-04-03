@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ed40ee49-adc0-4709-8c14-f7753713f801",
+    "name": "Verona",
+    "lat": 45.434189,
+    "lon": 10.99779
+  },
+  {
+    "id": "887a1538-1cf9-4d5f-85dd-cdea165ced7d",
+    "name": "Roma Capitale",
+    "lat": 41.900002,
+    "lon": 12.41667
+  },
+  {
+    "id": "0603b625-6430-45ac-9a1e-6b4acf10a920",
+    "name": "Roverè Veronese",
+    "lat": 45.593288,
+    "lon": 11.06999
+  },
+  {
+    "id": "4b304ecf-3150-4c91-8c1a-b7403e913f1a",
+    "name": "Povegliano Veronese",
+    "lat": 45.34948,
+    "lon": 10.88109
+  },
+  {
+    "id": "e74f75a3-7124-4db4-88b9-c85c807b11da",
+    "name": "Brescia",
+    "lat": 45.52478,
+    "lon": 10.22727
+  }
+]

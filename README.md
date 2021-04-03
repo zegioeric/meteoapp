@@ -1,9 +1,7 @@
 # meteoapp
 
 # Front-end
+npm start
 
--> npm start
-
-#Server
-
--> node server.js
+# Server
+node server.js
